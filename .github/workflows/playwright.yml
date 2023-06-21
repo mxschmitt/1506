@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: grep "Start-Date" /var/log/apt/history.log
+    - run: apt-get update
+    - run: grep "Start-Date" /var/log/apt/history.log
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
       with:

@@ -1,0 +1,19 @@
+{
+    "name": "Playwright jammy",
+    "image": "mcr.microsoft.com/playwright:next-jammy",
+    "remoteUser": "root",
+    "runArgs": [
+        "--privileged",
+        "--init",
+        "--shm-size=1g",
+        "-v",
+        "/var/run/docker.sock:/var/run/docker.sock"
+    ],
+    "features": {
+        "desktop-lite": {
+            "password": "vscode",
+            "webPort": "6080",
+            "vncPort": "5901"
+        }
+    }
+}

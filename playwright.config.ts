@@ -40,5 +40,11 @@ export default defineConfig<TestFixtures>({
         packageManager: 'pnpm'
       }
     },
+    {
+      name: 'bun',
+      use: {
+        packageManager: 'bun'
+      }
+    },
   ]
 });
